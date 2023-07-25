@@ -1,24 +1,35 @@
+// Define the analog input pin for the potentiometer
 const int potPin = 4;
-int led_arr[] = {18,19,21,22,23};
+
+// Define an array of LED pin numbers
+int led_arr[] = {18, 19, 21, 22, 23};
 
 void setup() {
 
-  for(int i =5;i;i--){
-    pinMode(led_arr[i-1],OUTPUT);
+  // Initialize the LED pins as OUTPUT in a loop
+  for (int i = 5; i; i--) {
+    pinMode(led_arr[i - 1], OUTPUT);
   }
-  
 }
 
-// the loop function runs over and over again forever
-void loop() 
-{
+void loop() {
+
+  // Read the analog value from the potentiometer
   int potValue = analogRead(potPin);
+
+  // Map the potentiometer value to a range of 0 to 5
   potValue = map(potValue, 0, 4095, 0, 5);
-  for(int i =0;i<5;i++)
-    {
-      if (potValue>=i+1)
-        digitalWrite(led_arr[i],HIGH);
-      else 
-        digitalWrite(led_arr[i],LOW);
+
+  // Loop through each LED
+  for (int i = 0; i < 5; i++) {
+
+    // Check if the potValue is greater than or equal to (i + 1)
+    if (potValue >= i + 1) {
+      // If true, turn on the LED by setting its pin to HIGH
+      digitalWrite(led_arr[i], HIGH);
+    } else {
+      // If false, turn off the LED by setting its pin to LOW
+      digitalWrite(led_arr[i], LOW);
     }
   }
+}
