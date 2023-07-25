@@ -1,10 +1,6 @@
-// Define the analog input pin for the potentiometer
-const int potPin = 4;
 
-// Define an array of LED pin numbers
-int led_arr[] = {18, 19, 21, 22, 23};
-
-void setup() {
+void setup() 
+{
 
   // Initialize the LED pins as OUTPUT in a loop
   for (int i = 5; i; i--) {

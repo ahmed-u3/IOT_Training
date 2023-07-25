@@ -2,22 +2,24 @@
 
 using namespace std;
 
+int sum(int arr[],int length){
+    int sum = 0;
+    for (int i = 0; i < length; ++i) {
+        sum += arr[i];
+    }
+    return sum;
+}
 int main(){
 
     int arr[5];
-    int sum = 0;
-
     cout << "Please Fill The Array" << endl;
-    for (int i = 0; i < 5; ++i) {
+    int length = sizeof(arr)/sizeof(arr[0]);
+    for (int i = 0; i < length; ++i) {
         cout << "Number-" << i+1 << ": ";
         cin >> arr[i];
     }
-
-    for (int i = 0; i < 5; ++i) {
-        sum += arr[i];
-    }
-
-    cout << "Sum of elements in the array: " << sum << endl;
+    int res = sum(arr,length);
+    cout << "Sum of elements in the array: " << res << endl;
 
     return 0;
 }
