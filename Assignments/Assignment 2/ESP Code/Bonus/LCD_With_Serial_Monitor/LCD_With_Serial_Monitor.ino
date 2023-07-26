@@ -5,9 +5,6 @@
 const int rs = 22, en = 23, d4 = 5, d5 = 18, d6 = 19, d7 = 21;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-// Boolean flag to control the loop execution
-bool flag = true;
-
 // Setup function runs once at the beginning of the program
 void setup() {
   // Set up the number of columns and rows for the LCD

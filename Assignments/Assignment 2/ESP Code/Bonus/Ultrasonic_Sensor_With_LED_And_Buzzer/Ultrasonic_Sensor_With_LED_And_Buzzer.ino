@@ -2,7 +2,7 @@
 const int trigPin = 32;      // Digital output pin to trigger the ultrasonic sensor
 const int echoPin = 33;      // Digital input pin to receive the echo from the ultrasonic sensor
 const int ledPin = 2;        // Digital output pin for the LED
-const int buzzerPin = 19;    // Digital output pin for the buzzer
+const int buzzerPin = 4;    // Digital output pin for the buzzer
 
 // Define the proximity threshold value (adjust as needed)
 const int proximityThreshold = 10; // Threshold distance in centimeters
