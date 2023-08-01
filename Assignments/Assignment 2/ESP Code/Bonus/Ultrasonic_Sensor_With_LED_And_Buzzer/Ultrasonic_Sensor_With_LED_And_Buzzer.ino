@@ -54,7 +54,7 @@ void loop() {
     digitalWrite(ledPin, LOW);
     digitalWrite(buzzerPin, LOW);
   }
-
+  
   // Add a small delay to avoid rapid triggering
   delay(100);
 }
