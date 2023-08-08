@@ -1,13 +1,13 @@
 // Define the pins used for the components
-int buzzer = 22;         // Pin connected to the buzzer
+int buzzer = 17;         // Pin connected to the buzzer
 int LED = 2;             // Pin connected to the LED
-int flame_sensor = 13;   // Pin connected to the flame sensor
+int flame_sensor = 4;   // Pin connected to the flame sensor
 
 int flame_detected;      // Variable to store the flame detection status
 
 void setup()
 {
-  Serial.begin(9600);    // Start serial communication at 9600 bps
+  Serial.begin(115200);    // Start serial communication at 9600 bps
   pinMode(buzzer, OUTPUT);   // Set the buzzer pin as an OUTPUT
   pinMode(LED, OUTPUT);       // Set the LED pin as an OUTPUT
   pinMode(flame_sensor, INPUT);  // Set the flame sensor pin as an INPUT

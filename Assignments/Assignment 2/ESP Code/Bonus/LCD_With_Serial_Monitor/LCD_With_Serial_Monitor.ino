@@ -2,7 +2,7 @@
 #include <LiquidCrystal.h>
 
 // Initialize the LCD module
-const int rs = 22, en = 23, d4 = 5, d5 = 18, d6 = 19, d7 = 21;
+const int rs = 3, en = 23, d4 = 5, d5 = 18, d6 = 19, d7 = 16;
 LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
 // Setup function runs once at the beginning of the program
@@ -14,7 +14,7 @@ void setup() {
   lcd.clear();
   
   // Prompt the user to enter their name
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 // Loop function runs repeatedly as long as the Arduino is powered on
