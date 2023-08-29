@@ -3,10 +3,6 @@
 // Initialize the AHT10/AHT20 sensor object
 Adafruit_AHTX0 aht;
 
-// Define the pins for the LED and the buzzer
-int led = 2;        /* LED output Pin */
-int buzzer = 19;    /* Buzzer output Pin */
-
 void setup() {
   // Initialize serial communication
   Serial.begin(9600);
@@ -18,10 +14,6 @@ void setup() {
     while (1) delay(10); // Hangs the program in an infinite loop if sensor not found
   }
   Serial.println("AHT10 or AHT20 found");
-
-  // Set the mode for LED and buzzer pins as OUTPUT
-  pinMode(led, OUTPUT);
-  pinMode(buzzer, OUTPUT);
 }
 
 void loop() {
@@ -36,20 +28,7 @@ void loop() {
   Serial.print("Humidity: "); Serial.print(humidity.relative_humidity); Serial.println("% rH");
   Serial.println();
 
-  // Check if the temperature is above 32 degrees Celsius
-  if (temp.temperature > 32) {
-    Serial.println("ALARM !! High Temperature");
 
-    // Turn ON the LED and the buzzer
-    digitalWrite(led, HIGH);
-    digitalWrite(buzzer, HIGH);
-  } else {
-    Serial.println("Normal Temperature");
-
-    // Turn OFF the LED and the buzzer
-    digitalWrite(led, LOW);
-    digitalWrite(buzzer, LOW);
-  }
 
   // Add a delay to avoid excessive readings and to allow the user to read the data
   delay(500);
