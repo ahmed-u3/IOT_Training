@@ -1,8 +1,8 @@
 // Define the pins for the ultrasonic sensor, LED, and buzzer
-const int trigPin = 32;      // Digital output pin to trigger the ultrasonic sensor
-const int echoPin = 33;      // Digital input pin to receive the echo from the ultrasonic sensor
+const int trigPin = 33;      // Digital output pin to trigger the ultrasonic sensor
+const int echoPin = 32;      // Digital input pin to receive the echo from the ultrasonic sensor
 const int ledPin = 2;        // Digital output pin for the LED
-const int buzzerPin = 4;    // Digital output pin for the buzzer
+const int buzzerPin = 17;    // Digital output pin for the buzzer
 
 // Define the proximity threshold value (adjust as needed)
 const int proximityThreshold = 10; // Threshold distance in centimeters
@@ -17,7 +17,7 @@ void setup() {
   pinMode(buzzerPin, OUTPUT);
 
   // Initialize the serial communication for debugging and displaying the measured distance
-  Serial.begin(9600);
+  Serial.begin(115200);
 }
 
 void loop() {
@@ -45,7 +45,7 @@ void loop() {
     
     // Turn on the LED and buzzer
     digitalWrite(ledPin, HIGH);
-    digitalWrite(buzzerPin, HIGH);
+    //digitalWrite(buzzerPin, HIGH);
   } else {
     // No object nearby
     Serial.print("No Nearby Object : ");
