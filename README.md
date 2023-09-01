@@ -30,11 +30,7 @@ In the lectures directory, you will find comprehensive lecture notes and present
 
 The tasks directory contains practical tasks and assignments designed to reinforce your understanding of IoT concepts and provide you with hands-on experience. Each task has its own subdirectory, complete with detailed instructions, code templates, and any required datasets. 
 
-In the `Final_Project` directory, you will find the following resources:
 
-- **PowerPoint Presentation:** A detailed presentation explaining the project's architecture, components, features, and technologies used.
-- **ESP32 Code Folder:** The code for implementing the smart home, smart garage, and robot car functionalities on ESP32 microcontrollers.
-- **Flutter Code Folder:** The code for the mobile app that controls and monitors the smart home, smart garage, and robot car components.
 
 ## Final Project
 Our final project showcases the practical application of IoT concepts and technologies. The project consists of three main components:
@@ -44,6 +40,22 @@ Our final project showcases the practical application of IoT concepts and techno
 2. **Smart Garage:** A smart garage solution that allows remote monitoring of parking spaces' occupancy .
 
 3. **Robot Car:** An autonomous robot car equipped with line tracking sensors, capable of navigating and parking itself in the smart garage.
+
+In the `Final_Project` directory, you will find the following resources:
+
+- **PowerPoint Presentation:** A detailed presentation explaining the project's architecture, components, features, and technologies used.
+
+- **ESP32 Code Folder:** The code for implementing the smart home, smart garage, and robot car functionalities on ESP32 microcontrollers.
+
+- **Flutter Code Folder:** The code for the mobile app that controls and monitors the smart home, smart garage, and robot car components.
+
+- **Pictures Folder:** Immerse yourself in visual representations of our project components, captured through pictures that depict the robot, garage, and smart home elements in action.
+
+- **SolidWorks Folder:** This directory features intricate SolidWorks design renderings of the robot, garage, and smart home, offering an insightful look into their structural design.
+
+- **Schema Folder:** Within this directory, discover meticulously crafted schematic diagrams showcasing the layout and configuration of the robot, garage, and smart home setups.
+
+- **Videos Folder:** Experience the project's dynamism firsthand through videos that highlight the operational capabilities of the robot, garage, and smart home features.
 
 ## Smart Home Features
 
