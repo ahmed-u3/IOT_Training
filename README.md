@@ -1,6 +1,6 @@
-# Internet of Things (IoT) Course Topics and Tasks
+# Internet of Things (IoT) Training Field 1
 
-Welcome to the Internet of Things (IoT) course repository! This repository contains all the materials you need to excel in the course, including lecture , tasks, and information about the final project.
+Welcome to the Internet of Things (IoT) training repository! This repository contains all the materials in the course, including lecture , tasks, and information about the final project.
 
 ## Course Instructors
 
