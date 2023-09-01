@@ -1,0 +1,23 @@
+Assignment1:
+Write a report about the following topics:
+OSI Model vs TCP/IP
+HTTP and its different versions
+Pub/sub model
+MQTT Protocol
+ID token vs Access Token
+Firebase Realtime Database
+
+Assignment 2: Write a client-side code that gets readings from IR Sensor, then authenticate (use keypad to write password) and send readings to Firebase RTDB. After that, you should get readings from Firebase in ESP32 and map it to a value that can be sent to the servo motor and display it in LCD and send it to the servo motor.
+Bonus in Assignment 2: you can use cloud functions to do mapping instead of doing it in an ESp32 device and send a timestamp for every reading.
+
+Assignment 3: Write code that does two of the following operation read, update and delete from the Firebase RTDB.
+Bonus in Assignment 3: you can do all three operations.
+
+Assignment4 Bonus:
+Authenticate using ID token instead of Email&Password
+or Custom Token
+
+Assignment5 Bonus:
+Send Multiple sensor readings from ESP to Firebase RTDB and Then get them in your ESP again, send a query filter
+that order them by specific value you choose
+and select all values that start with the specific value you choose also

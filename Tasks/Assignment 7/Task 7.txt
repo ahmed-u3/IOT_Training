@@ -1,0 +1,62 @@
+Dear Future Engineers, 
+
+I hope this message finds you well and sound. 
+
+
+This is a bonus assignment at which you are to: 
+
+Interface ESP32 with LCD, Keypad, IR sensor, and SG90 servo motor to implement an IoT based smart door system. 
+
+The ESP32 shall interface with IR sensor to access the analog reading IR sensor value from 0 to 4095 then map these readings to a readable human distance in centimeters then send these two values in JSON format to a real-time database in Firebase and shall show these two values on the LCD screen connected to the ESP32 but only when the user is authenticated. 
+
+In addition, authenticate with this database using a email/password method with a password on a keypad module on ESP32. If the password is incorrect it shall show an error message "Please enter anther password" on the LCD and other welcome message "Welcome to your home account" if the password is correct. 
+
+Moreover, interface a servo SG90 motor with the ESP32 module to act as the door which opens according to the user preferences. 
+
+On other side, develop an flutter based mobile application which could be used as an .apk file. This mobile application has 5 screens
+register screen, welcome screen, sign in screen, servo slider screen, text and graph to view IR readings. 
+
+The user shall be able to input a new user, authenticate a current user on the user database of the Firebase. 
+
+If the user is authenticated, he/she shall be able to view the distance as an analog reading read fetched from the real-time database.
+
+Moreover, if the reading is less than 3 centimeters the LCD shows "Critical distance detected, Waiting Admin" and run LED & Buzzer warning, the app shall show a notification with two options for the user and ask him/her if he/she will open the door and then if the user has selected to open the door; it shall shows anther screen with a slider to select the servo value from 0 to 180 which is to be sent to the real-time database in Firebase then to the ESP32 to move the servo motor to the selected angle and shows word "WELCOME" on an LCD connected to the ESP32 and if the user has selected NOT to open the door it shall show "Please visit us anther time" on the LCD connected to the ESP32 and the servo motor shall not move at all. 
+
+Then, the components/tools to used are: 
+
+1. ESP32 to control servo, IR, LCD, and keypad, LED, and Buzzer
+2. SG90 Servo Motor 
+3. 16x2 LCD Screen 
+4. 4x4 Keypad 
+5. Analog Reading IR Sensor 
+6. LED. 
+7. Buzzer 
+8. Realtime Database in Firebase 
+9. Flutter
+
+A use case is as the follows: 
+
+- User input password if correct or not it shall show message on LCD. 
+- When correct, the LCD shows IR and distance readings. 
+- User could view IR live readings with same user and password on the mobile app if the same user is authenticated. 
+- Then, when IR reads critical value. It send a prints a message on LCD, run LED & buzzer also notification to the app with two options. 
+- User could selected to move the servo or not to open or close the door and show LCD message on both cases. 
+
+A bonus could be: 
+1. Use a pushbutton to start and close the whole system. 
+2. Use potentiometer to manually control the servo if the user is on home not outside. 
+3. Implement LDR sensor to be show on LCD and app on same time as the IR. 
+
+This all could be done without the bonus kit, you can start working to do it til 30th of August, 2023 and we could discuss it anytime before. 
+
+All team members shall uploaded: 
+
+- All commented codes for flutter and Arduino. 
+- Video of working demo. 
+- Assignment report with detailed screen reporting. 
+
+The assignment is to be discussed with your project discussion. Discussion on code and video due to hardware limitations due to project implementation. 
+
+Wish you all the best. 
+
+Kindest regards,
